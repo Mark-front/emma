@@ -1,12 +1,90 @@
 body{
     font-family: Poppins, Arial, Helvetica, sans-serif;
     font-size: 16px;
+    position: relative;
 }
 button {
     background: none;
     border: none;
 }
 
+.nav {
+    width: 1440px;
+    height: 100px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.container {
+    height: inherit;
+    width: 1286px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav-but {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+
+
+.nav-but li{
+display: inline;
+}
+
+.nav-but a :not {
+    margin-left: 75px;
+}
+
+.nav_inside {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.nav_inside {
+   gap: 158px;
+}
+
+.but-icon:not(:first-child) {
+    margin-left: 45px;
+}
+
+.logo {
+    color: black;
+    font-family: Montserrat;
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 41.45px; 
+    text-decoration-line: none;  
+}
+
+.but{
+    color: black;
+    text-decoration-line: none;
+}
+
+.transition{
+    transition: color, 10s, ease-in-out;
+}
+/*кажется, будто время действия свойства не работает*/
+
+/*:hover {
+    color: rgb(159, 226, 204);
+}
+работает для всех кнопок!*/
+
+/* не получается настроить растояние между кнопками*/
+
+
+/*
 .main-cont {
     margin-top: 0;
     margin-left: 0;
@@ -134,4 +212,4 @@ a {
 
 .but-icon_me {
     color: black;
-}
+}*/
