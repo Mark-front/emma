@@ -3,6 +3,7 @@ body{
     font-size: 16px;
     position: relative;
 }
+
 button {
     background: none;
     border: none;
@@ -11,8 +12,7 @@ button {
 .nav {
     width: 1440px;
     height: 100px;
-    margin-right: auto;
-    margin-left: auto;
+    margin: 0 auto;
 }
 
 .container {
@@ -24,8 +24,7 @@ button {
 }
 
 .container {
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
 }
 
 .nav-but {
@@ -34,27 +33,27 @@ button {
     margin-bottom: 0;
 }
 
-
-
-.nav-but li{
-display: inline;
-}
-
-.nav-but a :not {
-    margin-left: 75px;
+.nav-but {
+    display: flex;
+    align-items: center;
+    gap: 75px;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
 }
 
 .nav_inside {
     display: flex;
     flex-flow: row nowrap;
+    gap: 158px;
 }
 
-.nav_inside {
-   gap: 158px;
-}
-
-.but-icon:not(:first-child) {
-    margin-left: 45px;
+.but-list {
+    display: flex;
+    align-items: center;
+    gap: 45px;
 }
 
 .logo {
@@ -71,145 +70,12 @@ display: inline;
     text-decoration-line: none;
 }
 
-.transition{
-    transition: color, 10s, ease-in-out;
+.but:hover {
+    color: red;
 }
-/*кажется, будто время действия свойства не работает*/
-
-/*:hover {
-    color: rgb(159, 226, 204);
-}
-работает для всех кнопок!*/
-
-/* не получается настроить растояние между кнопками*/
-
 
 /*
-.main-cont {
-    margin-top: 0;
-    margin-left: 0;
-    margin-right: 0;
-    padding-left: 0;
-    padding-top: 0;
-    padding-right: 0;
-    display: flex;
-    list-style-type: none;
-    flex-wrap: wrap;
-    justify-content: center;
+.but{
+    transition: all, 4s ease-in-out 1s;
 }
-
-.main-cont__pnl {
-    display: flex;
-    height: 100px;
-    width: 1440px;
-}
-
-.pnl__box {
-    width: 1286px;
-    height: 41px;
-    top: 30px;
-    left: 77px;
-    gap: 0px;
-    opacity: 0px;
-}
-
-a {
-    text-decoration: none;
-}
-
-.box__inside {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 75px;
-    padding-right: 75px;
-    padding-top: 30px;
-    height: 41px;
-}
-
-.inside__navigator {
-    display: flex;
-    list-style-type: none;
-}
-
-.inside__but {
-    width: 430px;
-    height: 24px;
-    margin-top: 28px;
-    margin-left: 266px;
-    margin-right: 158px;
-    font-size: 16px;
-    gap: 0px;
-    opacity: 0px;
-    list-style-type: none;
-    justify-content: space-between;
-    display: flex;
-}
-
-.transition{
-    transition: color, 3s, ease-in-out;
-}
-
-
-
-:hover {
-    color: rgb(159, 226, 204);
-}
-
-.but-icon{
-    width: 28px;
-    height: 28px;
-    margin-top: 7px;
-    margin-left: 45px;
-    padding: 4.67px 2.33px 4.67px 2.33px;
-    gap: 0px;
-    opacity: 0px;
-
-
-}
-
-.hero__inside-csrd.hero-card {}
-
-.but-logo__nav {
-    width: 185px;
-    height: 41px;
-    margin-top: 9px;
-    gap: 5px;
-    opacity: 0px;
-    color: black;
-    font-family: Montserrat;
-    font-size: 34px;
-    font-weight: 700;
-    line-height: 41.45px;
-    
-}
-
-.hero-card__subtitle.subtitle {}
-
-.hero-card__subtitle.main-subtitle {}
-
-.hero-card__text.text {}
-
-.but-logo__nav {
-    color: black;
-}
-
-.but-home {
-    color: black;
-}
-
-.but-shop {
-    color: black;
-}
-
-.but-about {
-    color: black;
-}
-
-.but-contact {
-    color: black;
-}
-
-.but-icon_me {
-    color: black;
-}*/
+    кажется, будто время действия свойства не работает*/
