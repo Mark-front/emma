@@ -68,14 +68,9 @@ button {
 .but{
     color: black;
     text-decoration-line: none;
+    transition: color 0.3s ease-out;
 }
 
 .but:hover {
     color: red;
 }
-
-/*
-.but{
-    transition: all, 4s ease-in-out 1s;
-}
-    кажется, будто время действия свойства не работает*/
